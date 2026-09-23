@@ -3,4 +3,8 @@ a.out
 fort.222
 output/output1
 printforinhydro/fort.100
-
+data
+gesrm
+figuras_1000_events_AuAu_SNN_200GeV/
+figuras_single_event_AuAu_SNN_200GeV/
+.DS_Store

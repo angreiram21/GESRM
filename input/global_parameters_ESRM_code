@@ -1,9 +1,9 @@
-# Initial energy per nucleon [GeV]: epsilon00=  66.0
-# Beam parameter: b0=  0.5
+# Initial energy per nucleon [GeV]: epsilon00=  100.0
+# Beam parameter: b0=  0.75
 # Atomic mass target: A1=  197
 # Atomic mass projectile: A2=  197
-# Target radius [fm]: R1=  6.380
-# Projectile radius [fm]: R2=  6.380
+# Target radius [fm]: R1=  6.38
+# Projectile radius [fm]: R2=  6.38
 # Skin depth [fm]: aws1=  0.535
 # Skin depth [fm]: aws2=  0.535  
 # Nucleon mass [GeV]: Mn=  0.938  
@@ -11,12 +11,12 @@
 # String tension parameter: A=  0.0734
 # Normal nuclear density [fm-3]: rho00=  0.16
 # tnc=  10
-# Number of simulations: neventos=  100
+# Number of simulations: neventos=  50000
 # Vorticity calculations: vortin=  0
 # Print fort.100: for100=  1
 # Check calculations: check=  0
 # Tfin =  5.0
-# Control type of calculations tc= 3 
+# Control type of calculations tc= 2
 
 c tc Needed to run GESRM+HYDRO+UrQMD
 c if tc=1 only event-by-event simulations are run
