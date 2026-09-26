@@ -67,7 +67,7 @@ GESRM/
 ├── plot_fort115_GESRM.py
 │
 ├── input/
-│   └── global_parameters_ESRM_code
+│   └── global_parameters_GESRM_code
 │
 ├── output/
 │   └── output1
