@@ -16,9 +16,9 @@ Barcelona, **April 2022**
 
 ## Description
 
-The GESRM model is based on the **Effective String Rope Model (ESRM)** and has been generalized to perform **event-by-event simulations of high-energy nuclear collisions with initial-state fluctuations generated using a Glauber Monte Carlo approach**.
+The **Generalized Effective String Rope Model (GESRM)** is based on the **Effective String Rope Model (ESRM)** and has been generalized to perform **event-by-event simulations of high-energy nuclear collisions with initial-state fluctuations generated using a Glauber Monte Carlo approach**.
 
-The code calculates the resulting initial state on a three-dimensional spatial grid, providing physical quantities such as:
+This repository contains the Fortran implementation of the GESRM model. The code calculates the resulting initial state on a three-dimensional spatial grid, providing physical quantities such as:
 
 * Energy density
 * Baryon density
@@ -145,7 +145,7 @@ Run:
 The main input file is:
 
 ```text
-input/global_parameters_ESRM_code
+input/global_parameters_GESRM_code
 ```
 
 The main program output is written to:
@@ -163,7 +163,7 @@ Depending on the configuration, additional files required for hydrodynamical cal
 The main input file,
 
 ```text
-input/global_parameters_ESRM_code
+input/global_parameters_GESRM_code
 ```
 
 contains the physical and numerical parameters used in the simulation.
@@ -325,7 +325,7 @@ cd GESRM
 Edit the main input file:
 
 ```text
-input/global_parameters_ESRM_code
+input/global_parameters_GESRM_code
 ```
 
 and specify the desired collision and simulation parameters.
@@ -464,9 +464,9 @@ For reproducibility, users are encouraged to cite the specific Git commit or rel
 
 ## License
 
-No explicit software license is currently specified in the repository.
+GESRM is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License v3.0 (GPL-3.0)**.
 
-If the code is intended to be redistributed or modified by other users, an appropriate `LICENSE` file should be added to the repository.
+See the `LICENSE` file for the full license text.
 
 ---
 

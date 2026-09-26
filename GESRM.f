@@ -1,22 +1,51 @@
+c     GESRM - Generalized Effective String Rope Model
 c
+c     Copyright (C) 2022 V. Magas and A. Reina
 c
-c                V. Magas & A. Reina- Barcelona - APRIL 2022
-
-
+c     This program is free software: you can redistribute it and/or modify
+c     it under the terms of the GNU General Public License as published by
+c     the Free Software Foundation, either version 3 of the License, or
+c     (at your option) any later version.
+c
+c     This program is distributed in the hope that it will be useful,
+c     but WITHOUT ANY WARRANTY; without even the implied warranty of
+c     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+c     See the GNU General Public License for more details.
+c
 c     ****************************************************************************
 c
-c     PROGRAM: EFFECTIVE STRING ROPE MODEL EVENT-BY-EVENT SIMULATIONS
+c     PROGRAM: GENERALIZED EFFECTIVE STRING ROPE MODEL
+c              EVENT-BY-EVENT SIMULATIONS
 c
-c     COMMENTS: This code calculate heavy ion collision event-by-event at high energies 
-c     using the Effective String Rope Model (arXiv:hep-ph/0202085v2) and the 
-c     Glauber Monte Carlo approach (Annu. Rev. Nucl. Part. Sci. 2007. 57:20543)
-c     It prints a fort.100 file used as initial conditions for hydro calculations.
-c 
+c     AUTHORS: V. Magas & A. Reina
+c             Barcelona - April 2022
+c
+c     DESCRIPTION:
+c     This code provides a Fortran implementation of the Generalized
+c     Effective String Rope Model (GESRM) for event-by-event simulations
+c     of high-energy nuclear collisions.
+c
+c     GESRM is based on the Effective String Rope Model (ESRM) and has
+c     been generalized to perform event-by-event simulations with
+c     initial-state fluctuations generated using a Glauber Monte Carlo
+c     approach.
+c
+c     The code calculates the initial state of the collision and can
+c     generate a fort.100 file for use as initial conditions in
+c     hydrodynamical calculations.
+c
+c     Scientific reference:
+c     A. Reina Ramirez, V. K. Magas, L. P. Csernai and D. Strottman,
+c     "Generalized Effective String Rope Model for the Initial Stages
+c     of Ultrarelativistic Heavy Ion Collisions,"
+c     Phys. Rev. C 107, 034915 (2023).
+c     DOI: 10.1103/PhysRevC.107.034915
+c
 c     ****************************************************************************
+c
+c     We are going to work in the center of rapidity frame
+c     --> rap01=-rap02
 
-c     We are going to work in the center of rapidity frame --> rap01=-rap02      
-
-c 
       PROGRAM ESRM
       IMPLICIT NONE
 C     ----------------------------------------------------------------------
