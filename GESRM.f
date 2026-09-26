@@ -1445,53 +1445,53 @@ C     ######################################################################
 C                          SAVE A COPY OF THE RESULTS
 C     ######################################################################
 C
-        IF (nteventos .LT. 5000) GO TO 330
-C
-        DO 335 j=1,100
-C
-          l=5000*j
-C
-          IF (neventos .EQ. l) THEN
-          
-C
-            OPEN(UNIT=19,FILE='plots/inf.dat',STATUS='REPLACE')
-C
-                  WRITE(19,*) neventos
-C
-            CLOSE(UNIT=19) 
-            
-C
-            OPEN(UNIT=20,FILE='plots/eaddtot.dat',STATUS='REPLACE')
-C
-                  WRITE(20,131) eaddtot
-C
-            CLOSE(UNIT=20) 
-C
-            OPEN(UNIT=21,FILE='plots/waddtot.dat',STATUS='REPLACE')
-C
-                  WRITE(21,131) waddtot
-C
-            CLOSE(UNIT=21)
-            
-            OPEN(UNIT=22,FILE='plots/zmomaddtot.dat',STATUS='REPLACE')
-C
-                  WRITE(22,131) zmomaddtot
-C
-            CLOSE(UNIT=22) 
-C
-            OPEN(UNIT=23,FILE='plots/paddtot.dat',STATUS='REPLACE')
-C
-                  WRITE(23,131) paddtot
-C
-            CLOSE(UNIT=23)
-C
-            
-C
-          ENDIF
-C
-  335   CONTINUE
-C
-  330   CONTINUE    
+c         IF (nteventos .LT. 5000) GO TO 330
+c C
+c         DO 335 j=1,100
+c C
+c           l=5000*j
+c C
+c           IF (neventos .EQ. l) THEN
+c
+c C
+c             OPEN(UNIT=19,FILE='plots/inf.dat',STATUS='REPLACE')
+c C
+c                   WRITE(19,*) neventos
+c C
+c             CLOSE(UNIT=19)
+c
+c C
+c             OPEN(UNIT=20,FILE='plots/eaddtot.dat',STATUS='REPLACE')
+c C
+c                   WRITE(20,131) eaddtot
+c C
+c             CLOSE(UNIT=20)
+c C
+c             OPEN(UNIT=21,FILE='plots/waddtot.dat',STATUS='REPLACE')
+c C
+c                   WRITE(21,131) waddtot
+c C
+c             CLOSE(UNIT=21)
+c
+c             OPEN(UNIT=22,FILE='plots/zmomaddtot.dat',STATUS='REPLACE')
+c C
+c                   WRITE(22,131) zmomaddtot
+c C
+c             CLOSE(UNIT=22)
+c C
+c             OPEN(UNIT=23,FILE='plots/paddtot.dat',STATUS='REPLACE')
+c C
+c                   WRITE(23,131) paddtot
+c C
+c             CLOSE(UNIT=23)
+c C
+c
+c C
+c           ENDIF
+c C
+c   335   CONTINUE
+c C
+c   330   CONTINUE
   
   
   
